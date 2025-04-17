@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>سکه سفر – شیراز</title>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600&display=swap" rel="stylesheet">
   <style>
@@ -15,7 +15,7 @@
       text-align: center;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 30px 20px;
     }
@@ -41,6 +41,21 @@
       font-size: 18px;
       line-height: 1.8;
     }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    audio {
+      margin-top: 25px;
+      width: 100%;
+    }
     .footer {
       margin-top: 40px;
       font-size: 14px;
@@ -51,15 +66,27 @@
 <body>
   <div class="container">
     <img class="image-banner" src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Shiraz_Nasir_ol_Molk_Mosque_Ceiling_Symmetric.jpg" alt="Shiraz" />
-    
+
     <div class="card">
       <h1>🎉 سکه سفر – شیراز</h1>
       <p>این سکه یادآور سفر به شهر زیبای شیراز است؛ شهر شعر، تاریخ و بهارنارنج.</p>
       <p><strong>تاریخ:</strong> فروردین ۱۴۰۴</p>
       <p><strong>شماره سکه:</strong> Shiraz014</p>
+
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        مرورگر شما از پخش صدا پشتیبانی نمی‌کند.
+      </audio>
+
+      <div class="gallery">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Shiraz_Hafez_Tomb.jpg" alt="Hafez Tomb" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Persepolis_01.jpg" alt="Persepolis" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Shiraz-Citadel.jpg" alt="Arg Karim Khan" />
+      </div>
     </div>
 
     <div class="footer">© 2025 Iran Travel Coin</div>
   </div>
 </body>
 </html>
+
